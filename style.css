@@ -1,0 +1,1286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+@font-face {
+	font-family: 'HeadLineA'; 
+	src: url(./fonts/HelveticaNeueCyr-Black.ttf); 
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl'; 
+	src: url(./fonts/MuseoSansCyrl-500.ttf); 
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl-Light'; 
+	src: url(./fonts/MuseoSansCyrl-300.ttf); 
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(./fonts/HelveticaNeueCyr-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Helvetica Neue-Light";
+    src: url(./fonts/HelveticaNeueCyr-Light.ttf);
+}
+
+@font-face {
+    font-family: "Helvetica Neue-Roman";
+    src: url(./fonts/HelveticaNeueCyr-Roman.ttf);
+}
+
+@font-face {
+    font-family: 'Rouble';
+    src: url(./fonts/rouble.otf);
+}
+
+
+.rouble {
+    font-family: Rouble;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 795px;
+    display: flex;
+    position: relative;
+    background: url(./img/abstract-blur-coffee-shop.webp), lightgray 50% / cover no-repeat;
+    z-index: 1;
+    background-position: right;
+    overflow: hidden;
+    width: 100%;
+}
+
+.main_back {
+    background: rgba(254, 206, 0, 0.83);
+    backdrop-filter: blur(6.5px);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main_left {
+    padding-top: 26px;
+    margin-left: 168px;
+    width: 40%;
+}
+
+.company {
+    display:flex;
+    align-items: center;
+}
+
+.text_company {
+    color: #18193F;
+    font-family: HeadLineA;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 125%;
+    letter-spacing: -0.8px;
+}
+
+.main_text {
+    color: #232323;
+    font-family: Museo Sans Cyrl;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.76px;
+    margin-top: 24px;
+    width: 629px;
+}
+
+.sub_text {
+    color: #232323;
+    font-family: Museo Sans Cyrl;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.4px;
+    margin-top: 24px;
+    width: 501px;
+}
+
+.stocks {
+    display: flex;
+    gap: 22px;
+    margin-top: 53px;
+}
+
+.stock_num {
+    width: 209px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    gap: 13px;
+    border-radius: 10px;
+    background: rgba(66, 66, 66, 0.80);
+}
+
+.num_left {
+    color: #FFF;
+    font-family: Helvetica Neue;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.6px;
+}
+
+.num_month {
+    color: #FFF;
+    font-family: Helvetica Neue-Light;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
+}
+
+.num_desc {
+    color: #D2E400;
+    font-family: Museo Sans Cyrl-Light;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+.main_more {
+    margin-top: 53px;
+}
+
+.more {
+    width: 285px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    background: #E10000;
+    color: #FFF;
+    text-align: center;
+    font-family: Helvetica Neue-Light;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.consult{
+    border: 1px solid #171717;
+    border-radius: 5px;
+    width: 279px;
+    height: 70px;
+    color: #171717;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%;
+    background: none;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.coffee_left {
+    position: absolute;
+    left: 0;
+    background-image: url(./img/granos-cafe-768x480-2.webp);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.coffee_right {
+    position: absolute;
+    left: 30vw;
+    background-image: url(./img/granos-cafe-768x480-1.webp);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 96%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.main_right{
+    width: 50%;
+    margin-top: 133px;
+}
+
+.funny_guy {
+    background-image: url(./img/funny-guy.webp);
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+    background-position-x: right;
+    right: 5%;
+    bottom: 0;
+    background-repeat: no-repeat;
+    height: 90%;
+    z-index: -1;
+}
+
+.two {
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner_two {
+    display: flex;
+    margin-top: 85px;
+    gap: 11px;
+    width: 100%;
+}
+
+.header_two {
+    color: #181818;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.course {
+    border-radius: 10px;
+    border: 1px solid rgba(72, 72, 72, 0.40);
+    background: rgba(196, 196, 196, 0.00);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 268px;
+    padding-bottom: 22px;
+}
+
+.h2_course {
+    color: #1B002F;
+    font-family: Helvetica Neue;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108%;
+    margin-top: 32px;
+}
+
+.point_course {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.text_course {
+    margin-left: 15px;
+    color: #2A2A2A;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.new_price {
+    color: #1B002F;
+    font-family: Helvetica Neue-Roman;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108%;
+    position: relative;
+}
+
+.old_price {
+    color: #A7ACBF;
+    font-family: Helvetica Neue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108%;
+    margin-bottom: 33.59px;
+    position: relative;
+}
+
+.old_price::before {
+    content: '';
+    width: 109px;
+    height: 2px;
+    background: #F22;
+    position: absolute;
+    top: 50%;
+    left: -3px;
+}
+
+.discount {
+    position: absolute;
+    border-radius: 4.685px;
+    background: #E10000;
+    color: #FFF;
+    width: 69px;
+    align-items: center;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica Neue-Light;
+    font-size: 18.742px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.427px;
+    right: -10px;
+    bottom: -15px;
+}
+
+.content_course {
+    margin-top: 33.59px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.prepayment {
+    color: #A7ACBF;
+    font-family: Helvetica Neue-Light;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108%;
+    margin-top: 25px;
+}
+
+.prepayment_price {
+    color: #1B002F;
+    font-family: Helvetica Neue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108%;
+    margin-top: 6px;
+}
+
+.advanced {
+    margin-top: 21px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advance {
+    width: 100%;
+    height: 66px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #E10000;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.gift {
+    height: 361px;
+    background-image: url(./img/gift.webp);
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 92px;
+    margin-bottom: 96px;
+}
+
+.three {
+    padding-top: 49px;
+    background: #F5C618;
+    height: 679px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.h2_three {
+    color: #151515;
+    font-family: Helvetica Neue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.p_three {
+    color: #151515;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    width: 424px;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.feedback {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feedback_input {
+    color: #686868;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.24px;
+    width: 553px;
+    height: 80px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.signup {
+    width: 553px;
+    height: 80px;
+    border-radius: 10px;
+    background: #E10000;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+.approval {
+    color: #151515;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    width: 567px;
+    margin-top: 26px;   
+}
+
+footer {
+    padding-top: 27px;
+    width: 100%;
+    height: 100%;
+    background: #2A2A2A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_company {
+    width: 210px;
+    height: 96px;
+    background-image: url(./img/footer-company.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right {
+    color: #FFF;
+    text-align: center;
+    font-family: Helvetica Neue-Roman;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: -0.44px;
+    text-transform: uppercase;
+    width: 40%;
+    margin-top: 30px;
+}
+
+.address {
+    color: #FFF;
+    text-align: center;
+    font-family: Helvetica Neue-Roman;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+    margin-top: 30px;
+    width: 797px;
+}
+
+.social {
+    margin-top: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 62px;
+}
+
+.vk, .telegram {
+    cursor: pointer;
+}
+
+.mobile_block {
+    display: none;
+}
+
+.successfully {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    opacity:0;
+    transition: ease 1s;
+    transform: scale(0.5);
+    position: absolute;
+}
+
+@media (max-width:1345px) {
+    .coffee_right {
+        background-size: cover;
+    }
+
+    .main {
+        height: 550px;
+    }
+
+    .stocks {
+        margin-top: 25px;
+    }
+
+    .main_more {
+        margin-top: 31px;
+    }
+
+    .stock_num {
+        width: 173px;
+        height: 44px;
+    }
+
+    .num_left {
+        font-size: 30px;
+    }
+
+    .num_month {
+        font-size: 16px;
+    }
+
+    .num_desc {
+        font-size: 12px;
+    }
+
+    .more {
+        width: 189px;
+        font-size: 16px;
+        height: 52px;
+        padding-left: 18px;
+        padding-right: 33px;
+    }
+
+    .consult {
+        width: 213px;
+        font-size: 16px;
+        margin-left: 8px;
+        height: 51px;
+    }
+
+    .main_text {
+        font-size: 33px;
+        width: 100%;
+        margin-top: 38px;
+    }
+
+    .icon_company svg{
+        width: 48px;
+        height: 48px;
+    }
+
+    .text_company {
+        font-size: 20px;
+    }
+
+    .sub_text {
+        font-size: 22px;
+        width: 70%;
+    }
+
+    .main_left {
+        margin-left: 55px;
+    }
+
+    .main_right {
+        margin-top: 50px;
+    }
+    
+    .coffee_left {
+        left: -12vw;
+        top:-12vh;
+    }
+    
+    .coffee_right {
+        filter: blur(2.5px);
+    }
+}   
+
+@media (max-width:1250px) {
+
+    .two {
+        width: 90%;
+    }
+
+    .inner_two {
+        justify-content: center;
+    }
+
+    .discount {
+        width: 35%;
+        height: 70%;
+        right: 10px;
+    }
+
+    .h2_course {
+        font-size: 2vw;
+    }
+
+    .new_price {
+        font-size: 3.5vw;
+    }
+
+    .old_price {
+        font-size: 2vw;
+    }
+
+    .old_price::before {
+        width: 53%;
+    }
+
+    .content_course {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:1200px) {
+    .advance {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        height: auto;
+        font-size: 1vw;
+        line-height: 16px;
+    }
+
+    .gift {
+        margin-top: 37px;
+        margin-bottom: 37px;
+    }
+
+}
+
+@media (max-width:1100px) {
+    .main_left {
+        width: 45%;
+    }
+
+    .discount {
+        font-size: 1.7vw;
+    }
+
+    .coffee_left {
+        background-size: contain;
+        top: 0;
+    }
+
+    .text_course {
+        font-size: 1vw;
+    }
+
+    .gift {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+
+@media (max-width:980px) {
+    .header_two {
+        font-size: 26px;
+        font-family: Helvetica Neue-Light;
+    }
+    
+    .h2_course {
+        margin-top: 17px;
+    }
+
+    .advanced {
+        gap: 5px;
+        margin-top: 16px;
+    }
+
+    .content_course {
+        margin-top: 18px;
+    }
+
+    .inner_two {
+        margin-top: 53px;
+        gap: 20px;
+    }
+
+    .main_left {
+        width: 60%;
+    }
+
+    .funny_guy {
+        right: -9%;
+    }
+
+    .new_price {
+        font-size: 30px;
+    }
+
+    .old_price {
+        font-size: 18px;
+        margin-bottom: 23px;
+    }
+
+    .prepayment {
+        margin-top: 18px;
+        font-size: 2vw;
+    }
+
+    .prepayment_price {
+        font-size: 22px;
+    }
+
+    .discount {
+        width: 46px;
+        height: 23px;
+        bottom: -10px;
+        font-size: 1.5vw;
+        align-items: normal;
+        right: 25px;
+    }
+}
+
+
+@media (max-width:950px) {
+
+    .content_course {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .coffee_right {
+        top: -30px;
+        left: 40%;
+    }
+}
+
+@media (max-width:900px) {
+    .gift {
+        height: 260px;
+        margin-top: 37px;
+        margin-bottom: 37px;
+    }
+
+    .discount {
+        right: 20px;
+    }
+
+    .social {
+        margin-bottom: 45.26px;
+    }
+}
+
+@media (max-width:880px) {
+    .discount {
+        right: 10%;
+    }
+}
+
+@media (max-width:850px) {
+    .discount {
+        right: 3%;
+    }
+}
+
+@media (max-width:800px) {
+    .discount {
+        right: -2%;
+    }
+
+    .coffee_right {
+        background-position: center;
+    }
+
+    .address {
+        width: 453.294px;
+        font-size: 11px;
+        line-height: 250%;
+        margin-top: 10px;
+    }
+
+    .social {
+        margin-top: 15px;
+    }
+
+    .footer_company {
+        width: 121.306px;
+        height: 54.6px;
+    }
+
+    .right {
+        font-size: 14px;
+        width: 622.781px;
+    }
+
+    .gift {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .three {
+        padding-top: 22px;
+        height: 367px;
+    }
+
+    .approval {
+        font-size: 8px;
+        width: 225px;
+    }
+
+    .h2_three {
+        font-size: 20px;
+    }
+
+    .p_three {
+        font-size: 12px;
+        width: 226px;
+        margin-top: 11px;
+    }
+
+    .feedback {
+        margin-top: 16px;
+        align-items: center;
+    }
+
+    .feedback_input {
+        width: 268px;
+        height: 37.867px;
+        font-size: 12px;
+    }
+
+    .signup {
+        width: 268px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:780px) {
+    .discount {
+        right: -4%;
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    .main_text {
+        font-size: 4vw;
+    }
+
+    .sub_text {
+        font-size: 3vw;
+    }
+
+    .main_more {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .more {
+        width: 60%;
+        margin-bottom: 8px;
+    }
+
+    .consult {
+        margin-left: 0;
+        width: 60%;
+    }
+
+    .main {
+        height: auto;
+    }
+
+    .new_price {
+        font-size: 3.7vw;
+    }
+
+    .old_price {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:740px) {
+    .discount {
+        right: -8%;
+    }
+}
+
+@media (max-width: 700px) {
+    .stocks {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .h2_course {
+        font-size: 26px;
+        margin-top: 32px;
+    }
+
+    .content_course {
+        margin-top: 32.41px;
+    }
+
+    .two {
+        padding-top: 55px;
+    }
+
+    .new_price {
+        font-size: 50px;
+    }
+
+    .discount {
+        width: 69px;
+        height: 37px;
+        font-size: 18.742px;
+        align-items: center;
+        bottom: -15px;
+        right: 10px;
+    }
+
+    .old_price {
+        font-size: 24px;
+    }
+
+    .text_course {
+        font-size: 12px;
+    }
+
+    .prepayment {
+        font-size: 22px;
+    }
+
+    .prepayment_price {
+        font-size: 32px;
+    }
+
+    .advance {
+        font-size: 14px;
+        width: 220px;
+        height: 66px;
+    }
+
+    .inner_two {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .gift {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .two {
+        width: 85%;
+    }
+
+    .course {
+        width: 100%;
+    }
+
+    .advanced {
+        margin-top: 20.59px;
+    }
+
+    .right {
+        width: 90%;
+    }
+    
+    .address {
+        width: 90%;
+    }
+    
+    .funny_guy {
+        right: -15%;
+    }
+}
+
+@media (max-width:600px) {  
+    
+    .successfully {
+        font-size:16px;
+    }
+    
+    .main_text {
+        margin-top: 29px;
+    }
+
+    .more {
+        width: 100%;
+    }
+
+    .consult {
+        width: 100%;
+    }
+
+    .main_more {
+        margin-bottom: 50px;
+        margin-top: 47px;
+    }
+
+    .sub_text {
+        font-size: 3vw;
+        width: 131px;
+        margin-top: 17px;
+    }
+
+    .stocks {
+        margin-top: 16px;
+    }
+
+    .main_left {
+        width: 40%;
+        margin-left: 28px;
+    }
+
+    .three {
+        padding-top: 32px;
+        height: 100%;
+    }
+
+    .approval {
+        margin-bottom: 25px;
+    }
+
+    .funny_guy {
+        right: -30%;
+    }
+
+    .coffee_right {
+        width: 579px;
+        transform: rotate(-26.428deg);
+        filter: blur(0);
+        background-position: 0;
+        left: 10%;
+        top: -5%;
+        height:90%;
+    }
+
+    .coffee_left {
+        width: 579px;
+        height: 393px;
+        top: 40%;
+    }
+
+    .more {
+        font-size: 2.5vw;
+    }
+
+    .consult {
+        font-size: 2.5vw;
+    }
+
+}
+
+@media (max-width:500px) {
+    .funny_guy {
+        right: -40%;
+        height: 86%;
+        z-index: 1;
+    }
+
+    .main_left {
+        width: 85%;
+        z-index: 2;
+    }
+
+    .mobile_block {
+        display: block;
+        width: 490px;
+        height: 206px;
+        background: #F8C712;
+        filter: blur(37.5px);
+        position: absolute;
+        bottom: -15px;
+        z-index: 1;
+    }
+
+    .main_text {
+        font-size: 24px;
+        width: 200px;
+    }
+
+    .more {
+        font-size: 18px;
+    }
+
+    .consult {
+        font-size: 18px;
+    }
+
+    .main {
+        height: 640px;
+    }
+
+    .coffee_right {
+        height: 65%;
+        top: -3%;
+        left: 10%;
+    }
+}
+
+@media (max-width:430px) {
+    .gift {
+        height: 200px;
+    }
+
+    .main_text {
+        font-size: 24px;
+    }
+
+    .sub_text {
+        font-size: 14px;
+    }
+
+    .funny_guy {
+        right: -45%;
+    }
+
+    .coffee_right {
+        left: 5%;
+    }
+}
+
+
+@media (max-width:350px) {
+    .header_two {
+        font-size: 16px;
+        width: 70%;
+    }
+
+    .gift {
+        height: 87px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .h2_three {
+        font-size: 16px;
+    }
+
+    .footer_company {
+        width: 77px;
+        height: 34px;
+    }
+
+    .right {
+        font-size: 8px;
+        width: 60%;
+    }
+
+    .address {
+        font-size: 8px;
+        width: 55%;
+        line-height: 150%;
+    }
+
+    .social {
+        margin-bottom: 57.19px;
+    }
+
+    .coffee_left {
+        left: -18%;
+    }
+
+    .text_company {
+        font-size: 14px;
+    }
+
+    .icon_company svg{
+        width:31px;
+        height: 31px;
+    }
+
+    .coffee_right {
+        left: -3%;
+    }
+}
+
+@media (max-width:320px) {
+    .feedback {
+        width: 100%;
+    }
+
+    .feedback_input {
+        width: 90%;
+    }
+
+    .signup {
+        width: 90%;
+    }
+}

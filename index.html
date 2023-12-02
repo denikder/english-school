@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <section class="main">
+        <div class="main_back"></div>
+            <div class="coffee_left"></div>
+            <div class="coffee_right"></div>
+        <div class="main_left">
+            <div class="company">
+                <div class="icon_company"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                    <rect width="96" height="96" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_202_108" transform="scale(0.0104167)"/>
+                    </pattern>
+                    <image id="image0_202_108" width="96" height="96" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                    </svg></div>
+                <div class="text_company">English</div>
+            </div>
+            <p class="main_text">Вкладывайте незначительные деньги каждый день в копилку своих знаний.</p>
+            <p class="sub_text">Следующий курс для вас будет стоить всего <strong>178 рублей в день</strong></p>
+        <div class="stocks">
+            <div class="stock_num">
+                <div class="num_left">01</div>
+                <div class="num_right">
+                    <div class="num_month">Ноября</div>
+                    <div class="num_desc">Ближайший старт</div>
+                </div>
+            </div>
+            <div class="stock_num">
+                <div class="num_left">21</div>
+                <div class="num_right">
+                    <div class="num_month">Октября</div>
+                    <div class="num_desc">Конец акции</div>
+                </div>
+            </div>
+        </div>
+        <div class="main_more">
+            <button class="more">Узнать подробнее</button>
+            <button class="consult">Бесплатная консультация</button>
+        </div>
+    </div>
+            <div class="funny_guy"></div>
+            <div class="mobile_block"></div>
+    </section>
+    <section class="two">
+        <div class="header_two">Выберите свой вариант обучения</div>
+        <div class="inner_two">
+        <div class="course">
+            <div class="h2_course">Один курс</div>
+            <div class="content_course">
+                <div class="new_price one"><span class="rouble">o</span>
+                    <div class="discount">-56%</div>
+                </div>
+                <div class="old_price one">24 900 <span class="rouble">o</span></div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course"><strong>2 месяца обучения</strong></div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Грамматическая выжимка</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Разговорный тренажёр</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Слова с ассоциациями</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Регулярные мини-задания</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Персональный куратор</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Сертификат об обучении</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Best Teachers</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course"><strong>Звонки от Second Teacher</strong></div>
+                    </div>
+                <div class="prepayment">Предоплата</div>
+                <div class="prepayment_price">900 <span class="rouble">o</span></div>
+                <div class="advanced">
+                <button class="advance">внести предоплату<br>из рф</button>
+                <button class="advance">внести предоплату<br>из-за границы</button>
+                </div>
+            </div>
+        </div>
+        <div class="course">
+            <div class="h2_course">Два курса</div>
+            <div class="content_course">
+                <div class="new_price one"><span class="rouble">o</span>
+                    <div class="discount">-60%</div>
+                </div>
+                <div class="old_price one">48 900 <span class="rouble">o</span></div>
+                <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course"><strong>4 месяца обучения</strong></div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Грамматическая выжимка</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Разговорный тренажёр</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Слова с ассоциациями</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Регулярные мини-задания</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Персональный куратор</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Сертификат об обучении</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Best Teachers</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course"><strong>Звонки от Second Teacher</strong></div>
+                    </div>
+                <div class="prepayment">Предоплата</div>
+                <div class="prepayment_price">900 <span class="rouble">o</span></div>
+                <div class="advanced">
+                <button class="advance">внести предоплату<br>из рф</button>
+                <button class="advance">внести предоплату<br>из-за границы</button>
+                </div>
+            </div>
+        </div>
+        <div class="course">
+            <div class="h2_course">Три курса</div>
+            <div class="content_course">
+                <div class="new_price one"><span class="rouble">o</span>
+                    <div class="discount">-61%</div>
+                </div>
+                <div class="old_price one">74 900 <span class="rouble">o</span></div>
+                <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course"><strong>6 месяцев обучения</strong></div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Грамматическая выжимка</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Разговорный тренажёр</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Слова с ассоциациями</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Регулярные мини-задания</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Персональный куратор</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Сертификат об обучении</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Best Teachers</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course"><strong>Звонки от Second Teacher</strong></div>
+                    </div>
+                <div class="prepayment">Предоплата</div>
+                <div class="prepayment_price">900 <span class="rouble">o</span></div>
+                <div class="advanced">
+                <button class="advance">внести предоплату<br>из рф</button>
+                <button class="advance">внести предоплату<br>из-за границы</button>
+                </div>
+            </div>
+        </div>
+        <div class="course">
+            <div class="h2_course">Пять курсов</div>
+            <div class="content_course">
+                <div class="new_price one"><span class="rouble">o</span>
+                    <div class="discount">-65%</div>
+                </div>
+                <div class="old_price one">124 900 <span class="rouble">o</span></div>
+                <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course"><strong>10 месяцев обучения</strong></div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Грамматическая выжимка</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Разговорный тренажёр</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Слова с ассоциациями</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Регулярные мини-задания</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Персональный куратор</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Сертификат об обучении</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course">Best Teachers</div>
+                    </div>
+                    <div class="point_course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M1 4.06383L4.11111 9L9 1" stroke="#1B002F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="text_course"><strong>Звонки от Second Teacher</strong></div>
+                    </div>
+                <div class="prepayment">Предоплата</div>
+                <div class="prepayment_price">900 <span class="rouble">o</span></div>
+                <div class="advanced">
+                <button class="advance">внести предоплату<br>из рф</button>
+                <button class="advance">внести предоплату<br>из-за границы</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="gift"></div>
+    </section>
+    <section class="three">
+        <div class="h2_three">Еще думаете?</div>
+        <div class="p_three">Записывайтесь на бесплатный урок и попробуйте сами, это поможет принять решение</div>
+        <div class='successfully'>Заявка успешно отправлена.</div>
+        <form class="feedback">
+            <input class="name feedback_input" name="name" type="text" required placeholder="Введите ваше имя">
+            <input class="phone feedback_input" name="phone" type="tel" required placeholder="Введите ваш телефон">
+            <input class="email feedback_input" name="email" type="email" required placeholder="Введите ваш email">
+            <input class="signup" type="submit" value="записаться">
+        </form>
+        <p class="approval">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</p>
+    </section>
+    <footer>
+        <div class="footer_company"></div>
+        <div class="right">2015 - 2021 © English. Все права защищены. Политика конфиденциальности Соглашение об обработке персональных данных</div>
+        <p class="address">ООО "Инглиш", юридический адрес: 000000, Санкт-Петербург, ул. Улица, д. 0/00 лит. 0, пом. 0 ОГРН: 000000000000 | ИНН: 000000000 | КПП: 000000000</p>
+        <div class="social">
+            <svg class="vk" xmlns="http://www.w3.org/2000/svg" width="30" height="15" viewBox="0 0 30 15" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6782 14.9369H16.4715C16.4715 14.9369 17.0128 14.8849 17.2893 14.624C17.5446 14.3836 17.5361 13.9333 17.5361 13.9333C17.5361 13.9333 17.5011 11.8249 18.6176 11.5139C19.7182 11.2075 21.1323 13.5517 22.6301 14.4532C23.7636 15.1356 24.6248 14.9861 24.6248 14.9861L28.6309 14.9369C28.6309 14.9369 30.7262 14.8237 29.7326 13.38C29.651 13.2621 29.1532 12.3114 26.7539 10.359C24.2413 8.31553 24.5782 8.64604 27.6045 5.11067C29.4466 2.95862 30.1838 1.644 29.9529 1.08139C29.7337 0.544768 28.3788 0.686814 28.3788 0.686814L23.8674 0.710952C23.8674 0.710952 23.5327 0.671031 23.2848 0.801008C23.0433 0.9282 22.8876 1.22529 22.8876 1.22529C22.8876 1.22529 22.1725 2.89085 21.2213 4.3076C19.2129 7.29707 18.4089 7.4549 18.0806 7.26922C17.3168 6.83658 17.5075 5.53217 17.5075 4.60469C17.5075 1.70713 18.0096 0.499276 16.5319 0.186403C16.0415 0.0833498 15.6802 0.0146477 14.4261 0.00350683C12.817 -0.0113477 11.4548 0.00722047 10.6836 0.338662C10.1699 0.558694 9.77372 1.04982 10.0152 1.07767C10.3129 1.11295 10.9887 1.23736 11.3467 1.66443C11.8086 2.2159 11.7927 3.45346 11.7927 3.45346C11.7927 3.45346 12.0586 6.8635 11.172 7.28778C10.5639 7.57745 9.73029 6.98512 7.93905 4.27232C7.02172 2.88342 6.32895 1.34784 6.32895 1.34784C6.32895 1.34784 6.19548 1.06096 5.95715 0.906846C5.66796 0.721165 5.26438 0.661747 5.26438 0.661747L0.977491 0.686814C0.977491 0.686814 0.334511 0.702597 0.0982924 0.947696C-0.112504 1.16587 0.081344 1.61708 0.081344 1.61708C0.081344 1.61708 3.43713 8.49842 7.23675 11.966C10.7218 15.1458 14.6782 14.9369 14.6782 14.9369Z" fill="white"/>
+            </svg>
+            <svg class="telegram" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                <path d="M23.2477 4.18179L3.30143 11.8734C1.94018 12.4202 1.94806 13.1795 3.05168 13.5182L8.17268 15.1157L20.0212 7.64004C20.5814 7.29916 21.0933 7.48254 20.6726 7.85604L11.0729 16.5197H11.0707L11.0729 16.5208L10.7197 21.7993C11.2372 21.7993 11.4656 21.5619 11.7558 21.2818L14.2432 18.863L19.4171 22.6847C20.3711 23.21 21.0562 22.94 21.2936 21.8015L24.6899 5.79504C25.0376 4.40116 24.1578 3.77004 23.2477 4.18179Z" fill="white"/>
+            </svg>
+        </div>
+    </footer>
+</body>
+</html>
